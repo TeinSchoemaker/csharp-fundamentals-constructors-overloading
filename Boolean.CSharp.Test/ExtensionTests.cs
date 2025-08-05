@@ -22,7 +22,7 @@ namespace Boolean.CSharp.Test
 
             Extension extension = new Extension();
             
-            float result = extension.add(a, b);
+            float result = extension.Add(a, b);
 
             Assert.AreEqual(3.0f, result);
 
@@ -36,7 +36,7 @@ namespace Boolean.CSharp.Test
 
             Extension extension = new Extension();
 
-            double result = extension.add(a, b);
+            double result = extension.Add(a, b);
 
             Assert.AreEqual(3.0, result);
         }
@@ -49,7 +49,7 @@ namespace Boolean.CSharp.Test
 
             Extension extension = new Extension();
 
-            float result = extension.subtract(a, b);
+            float result = extension.Subtract(a, b);
 
             Assert.AreEqual(1.0f, result);
         }
@@ -62,7 +62,7 @@ namespace Boolean.CSharp.Test
 
             Extension extension = new Extension();
 
-            string result = extension.subtract(source, z);
+            string result = extension.Subtract(source, z);
 
             Assert.IsTrue(result == "the quick brown fox jumps over the lay dog");
         }
@@ -75,7 +75,7 @@ namespace Boolean.CSharp.Test
 
             Extension extension = new Extension();
 
-            int result = extension.multiply(a, b);
+            int result = extension.Multiply(a, b);
 
             Assert.AreEqual(10, result);
         }
@@ -87,7 +87,7 @@ namespace Boolean.CSharp.Test
 
             Extension extension = new Extension();
 
-            string result = extension.multiply(source, 3);
+            string result = extension.Multiply(source, 3);
 
             Assert.IsTrue("Hello,Hello,Hello" == result);
         }
@@ -99,7 +99,7 @@ namespace Boolean.CSharp.Test
             int multiplier = 3;
 
             Extension extension = new Extension();
-            var result = extension.multiply(source, multiplier);
+            var result = extension.Multiply(source, multiplier);
 
             int[] answer = { 6, 21, 9 };
 
